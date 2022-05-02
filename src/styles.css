@@ -1,0 +1,32 @@
+.App {
+  font-family: serif;
+  text-align: center;
+}
+
+body {
+  background-color: #f2f7ff;
+}
+h1 {
+  background-color: #4a74aa;
+  color: #f2f7ff;
+  text-align: center;
+}
+h2 {
+  color: #4875ab;
+  text-align: center;
+}
+
+h3 {
+  color: SlateGray;
+  text-align: center;
+}
+
+h4 {
+  color: DarkSlateGray;
+  text-align: center;
+  font-weight: bold;
+}
+.App {
+  font-family: serif;
+  text-align: center;
+}

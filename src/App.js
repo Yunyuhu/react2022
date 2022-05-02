@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import Exam1 from "./Exam";
+import Exam2 from "./Exam_";
+import Main from "./UI/Main";
+import SignUp from "./Account/SignUp";
+import SignIn from "./Account/SignIn";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* <h1>測驗</h1> */}
+        <Route path="/" element={<Main />} />
+        <Route path="/exam" element={<Exam1 />} />
+        <Route path="/english" element={<Exam2 />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

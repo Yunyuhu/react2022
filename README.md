@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# react2022：考試練習網站
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🎯 2022 年用 React 做的線上考試練習網站：註冊登入後，選擇科目做題目。
 
-## Available Scripts
+## 🕹️ 內容
 
-In the project directory, you can run:
+| 功能 | 檔案 |
+|---|---|
+| 註冊與登入 | `src/Account/SignIn.js`、`src/Account/SignUp.js` |
+| 選單與首頁 | `src/UI/AppMenu.js`、`src/UI/Main.js` |
+| 化學（單選、多選） | `Chemistry.js`、`ChemistryRadio.js`、`ChemistryMultiple.js` |
+| 英文 | `English.js` |
+| 數學隨機出題、減法練習 | `MathRandom.js`、`Minus.js` |
+| 考試頁 | `Exam.js` |
 
-### `npm start`
+## 🛠️ 怎麼實作
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 畫面：React、MUI
+- 換頁：React Router
+- 帳號與資料：Firebase（Firestore、Storage），設定在 `src/settings/firebaseConfig.js`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ▶️ 怎麼執行
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+npm start
+```
